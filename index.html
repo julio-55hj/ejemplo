@@ -1,118 +1,99 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dulce Delicia | Pastelería</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" href="estilos.css" />
+    <meta charset="UTF-8">
+    <title>Dulce Delicia</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
+
 <body>
 
 <header>
-    <h1>Dulce Delicia</h1>
-    <p>Los mejores pasteles para tus momentos especiales</p>
+    <h1>🎂 Dulce Delicia</h1>
+    <button id="btnCarrito">
+        🛒 Carrito (<span id="contador">0</span>)
+    </button>
 </header>
 
-<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<main class="productos">
 
+    <div class="producto">
+        <img src="img/pchocolate.jpeg" alt="Pastel Chocolate">
+        <h2>Pastel de Chocolate</h2>
+        <p>$40 MXN</p>
+        <button onclick="agregarCarrito('Pastel de Chocolate', 40)">
+            Agregar al carrito
+        </button>
+    </div>
 
-<nav>
-    <a href="#inicio">Inicio</a>
-    <a href="#productos">Productos</a>
-    <a href="#nosotros">Nosotros</a>
-    <a href="#contacto">Contacto</a>
-</nav>
+    <div class="producto">
+        <img src="img/pvainilla.jpeg" alt="Pastel de Vainilla">
+        <h2>Pastel de Vainilla</h2>
+        <p>$40 MXN</p>
+        <button onclick="agregarCarrito('Pastel de Vainilla', 40)">
+            Agregar al carrito
+        </button>
+    </div>
 
-<section class="hero" id="inicio">
-    <h2>Endulza tu día con nuestros deliciosos pasteles 🎂</h2>
-</section>
-
-<section class="section" id="productos">
-    <h2>Nuestros Pasteles</h2>
-    <br>
-    <div class="products">
-
-        <div class="card">
-            <img src="pastel de chocolate.jpeg" alt="Pastel Chocolate">
-            <h3>Pastel de Chocolate</h3>
-            <p>Rebanada de pastel con cobertura de crema y nuez.</p>
-            <p class="price">$40</p>
-            <button>Comprar</button>
-        </div>
-
-        <div class="card">
-            <img src="pastel de vainilla.jpeg" alt="Pastel vainilla">
-            <h3>Pastel de vainilla </h3>
-            <p>Rebanada de pastel de vainila con cobertura de frutas frescas.</p>
-            <p class="price">$40</p>
-            <button>Comprar</button>
-        </div>
-
-        <div class="card">
-            <img src="pastel de zanahoria.jpeg" alt="Pastel zanahoria">
-            <h4>Pastel de Zanahoria</h4>
-            <p>Rebanada de pastel húmedo con cobertura de frutas.</p>
-            <p class="price">$40</p>
-            <button>Comprar</button>
-        </div>
-        
-        <div class="card">
-            <img src="chocoflan.jpeg" alt=" Chocoflan">
-            <h3>chocoflan </h3>
-            <p>Rebanada de chocoflan casero.</p>
-            <p class="price">$45</p>
-            <button>Comprar</button>
-        </div>
-
-        </div>
-    </section>
+    <div class="producto">
+        <img src="img/zanahoria.jpeg" alt="Pastel de Zanahoria">
+        <h2>Pastel de Zanahoria</h2>
+        <p>$40 MXN</p>
+        <button onclick="agregarCarrito('Pastel de Zanahoria', 40)">
+            Agregar al carrito
+        </button>
+    </div>
     
-    <section class="section" id="productos">
-    <h2>Nuestras Malteadas</h2>
-    <br>
-    <div class="products">
+     <div class="producto">
+        <img src="img/chocoflan.jpeg" alt="Chocoflan">
+        <h2>Chocoflan</h2>
+        <p>$45 MXN</p>
+        <button onclick="agregarCarrito('Chocoflan', 45)">
+            Agregar al carrito
+        </button>
+    </div>
     
-    <div class="card">
-            <img src="malteada de fresa.jpeg" alt="Malteada de fresa">
-            <h3>Malteada de fresa</h3>
-            <p>Deliciosa malteada de fresa.</p>
-            <p class="price">$30</p>
-            <button>Comprar</button>
-        </div>
+     <div class="producto">
+        <img src="img/fresa.jpeg" alt="Malteada de Fresa">
+        <h2>Malteada de Fresa</h2>
+        <p>$30 MXN</p>
+        <button onclick="agregarCarrito('Malteada de Fresa', 30)">
+            Agregar al carrito
+        </button>
+    </div>
     
-    <div class="card">
-            <img src="malteada de chocolate.jpeg" alt="Malteada de chocolate">
-            <h3>Malteada de chocolate</h3>
-            <p>Deliciosa malteada de chocolate.</p>
-            <p class="price">$30</p>
-            <button>Comprar</button>
-        </div>
-        
-        <div class="card">
-            <img src="malteada de vainilla.jpeg" alt="Malteada de vainilla">
-            <h3>Malteada de vainilla</h3>
-            <p>Deliciosa malteada de vainilla.</p>
-            <p class="price">$30</p>
-            <button>Comprar</button>
-        </div>
-    </section>
+     <div class="producto">
+        <img src="img/mchocolate.jpeg" alt="Malteada de Chocolate">
+        <h2>Malteada de Chocolate</h2>
+        <p>$30 MXN</p>
+        <button onclick="agregarCarrito('Malteada de Chocolate', 30)">
+            Agregar al carrito
+        </button>
+    </div>
+    
+     <div class="producto">
+        <img src="img/mvainilla.jpeg" alt="Malteada de Vainilla">
+        <h2>Malteada de Vainilla</h2>
+        <p>$30 MXN</p>
+        <button onclick="agregarCarrito('Malteada de Vainilla', 30)">
+            Agregar al carrito
+        </button>
+    </div>
 
-<section class="section" id="nosotros">
-    <h2>Sobre Nosotros</h2>
-    <br>
-    <p>En Dulce Delicia llevamos más de 10 años creando pasteles artesanales con ingredientes frescos y de la mejor calidad. Nuestra pasión es hacer felices a nuestros clientes en cada celebración.</p>
-</section>
+</main>
 
-<section class="section" id="contacto">
-    <h2>Contacto</h2>
-    <br>
-    <p>Instagram:  </p>
-    <p>Teléfono: +52 866 234 1304</p>
-</section>
+<!-- CARRITO LATERAL -->
+<aside id="carrito" class="carrito">
+    <h2>🛒 Tu carrito</h2>
+    <ul id="lista-carrito"></ul>
+    <p id="total">Total: $0 MXN</p>
 
-<footer>
-    <p>© 2026 Dulce Delicia - Todos los derechos reservados</p>
-</footer>
+    <button id="vaciar">Vaciar carrito</button>
+    <button id="finalizar">Finalizar compra</button>
+    <b
+</aside>
 
+<script src="script.js"></script>
+	<a href="https://instagram.com" target="_blanck" class="social-link">Comprar por Instagram</a>
 </body>
 </html>
