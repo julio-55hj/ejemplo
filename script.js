@@ -1,3 +1,5 @@
+
+
 let total = 0;
 let contador = 0;
 
@@ -51,6 +53,10 @@ document.getElementById("vaciar").addEventListener("click", () => {
     actualizarCarrito();
 });
 
+document.getElementById("cerrarCarrito").addEventListener("click", () => {
+    carrito.classList.remove("activo");
+});
+
 // Finalizar compra
 document.getElementById("finalizar").addEventListener("click", () => {
     if (contador === 0) {
@@ -64,3 +70,5 @@ document.getElementById("finalizar").addEventListener("click", () => {
         carrito.classList.remove("activo");
     }
 });
+
+
